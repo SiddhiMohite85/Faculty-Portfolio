@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Reviews | Prof. Madhav Ingale</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #f0f8ff;
+      color: #333;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #0074d9;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar h1 {
+      font-size: 24px;
+    }
+
+    .nav-links a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    /* Main Section */
+    .reviews-section {
+      max-width: 1200px;
+      margin: 50px auto;
+      padding: 20px;
+    }
+
+    .reviews-section h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #0074d9;
+      font-size: 32px;
+    }
+
+    .review-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .review-card {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+      transition: transform 0.2s;
+    }
+
+    .review-card:hover {
+      transform: translateY(-4px);
+    }
+
+    .review-card strong {
+      font-size: 16px;
+      color: #222;
+    }
+
+    .review-card p {
+      margin-top: 8px;
+      font-size: 14px;
+      line-height: 1.5;
+      color: #555;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #0074d9;
+      color: white;
+      margin-top: 50px;
+    }
+
+    @media (max-width: 600px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .nav-links {
+        margin-top: 10px;
+      }
+
+      .nav-links a {
+        display: inline-block;
+        margin: 10px 10px 0 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <h1>Prof. Madhav Ingale</h1>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="course.html">Course Material</a>
+      <a href="papers.html">Papers Published</a>
+      <a href="experience.html">Experience</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Reviews Section -->
+  <section class="reviews-section">
+    <h2>Student Reviews</h2>
+    <div class="review-grid">
+      <div class="review-card">
+        <strong>Siddhi Mohite</strong>
+        <p>Prof. Ingale is one of the best teachers I’ve ever had. Highly recommended!</p>
+      </div>
+      <div class="review-card">
+        <strong>Tanishka Patil</strong>
+        <p>His mentorship helped me get into IIT for M.Tech. Excellent guidance!</p>
+      </div>
+      <div class="review-card">
+        <strong>Jui Shilimkar</strong>
+        <p>Very helpful and supportive during project work. Always available to help.</p>
+      </div>
+      <div class="review-card">
+        <strong>Jabez Bhodke</strong>
+        <p>Helped me build strong fundamentals in Computer Graphics. Truly a gem!</p>
+      </div>
+      <div class="review-card">
+        <strong>Dhiraj Gate</strong>
+        <p>His lectures were always clear and engaging. Loved his teaching style!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 Prof. Madhav Ingale | All rights reserved.
+  </footer>
+
+</body>
+</html>

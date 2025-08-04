@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Conferences & Seminars | Prof. Madhav Ingale</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    :root {
+      --gradient-bg: linear-gradient(to right, #004080, #0066cc);
+      --card-bg: #ffffff;
+      --card-border: #004080;
+      --text-color: #111;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f0f8ff;
+      color: var(--text-color);
+    }
+
+    nav {
+      background: linear-gradient(to right, #004080, #0066cc);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+    }
+
+    nav .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    nav .links a {
+      color: white;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-weight: 600;
+    }
+
+    nav .links a:hover {
+      text-decoration: underline;
+    }
+
+    header {
+      background: var(--gradient-bg);
+      color: white;
+      padding: 3rem 5%;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .main {
+      padding: 3rem 5%;
+    }
+
+    .event {
+      background: var(--card-bg);
+      padding: 1rem 1.5rem;
+      margin-bottom: 1.5rem;
+      border-left: 4px solid var(--card-border);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      border-radius: 4px;
+    }
+
+    .event h3 {
+      font-size: 1rem;
+      color: var(--card-border);
+      font-weight: 500;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      margin-top: 2rem;
+      background-color: #004080;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">Prof. Madhav Ingale</div>
+    <div class="links">
+      <a href="index.html">Home</a>
+      <a href="experience.html">Experience</a>
+      <a href="papers.html">Papers Published</a>
+      <a href="conferences.html">Conferences</a>
+      <a href="course.html">Course Material</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <header>
+    <h1>Conferences / Seminars Attended</h1>
+    <p>List of training programs and national workshops attended</p>
+  </header>
+
+  <div class="main" id="seminars"></div>
+
+  <footer>
+    © 2025 Prof. Madhav Ingale. All rights reserved.
+  </footer>
+
+  <script>
+    const seminars = [
+      "Three-day National Conference on O.O. Technology, 9–11 Aug 2003, DBATU, Lonere, Raigad.",
+      "Three-day Course on Mobile Computing, 12–14 Aug 2004, VES Institute of Technology, Chembur, Mumbai.",
+      "Internal Quality Auditor Training, 26–28 Nov 2004, Parshvanath College of Engineering, Thane.",
+      "One-day National Level Workshop on Technical Writing & Presentation Skills, 11 Dec 2004, Parshvanath COE, Thane.",
+      "Two-day National Level Workshop on Software Testing Tools, 25–26 Feb 2006, Smt. Kashibai Navale COE, Pune.",
+      "Two-day Workshop on XML and Web Services using .NET, 29–30 March 2008, Smt. Kashibai Navale COE, Pune.",
+      "Two-day Training Programme on Effective Role Execution for Institutional Development, 9–10 Feb 2009, VIT, Pune.",
+      "Four-day Training Programme on OOAD using UML with Rational Software Architect, 27–30 Jan 2011, JSCOE, Pune."
+    ];
+
+    const container = document.getElementById("seminars");
+
+    seminars.forEach((entry, index) => {
+      const div = document.createElement("div");
+      div.className = "event";
+      div.innerHTML = `<h3>${index + 1}. ${entry}</h3>`;
+      container.appendChild(div);
+    });
+  </script>
+
+</body>
+</html>

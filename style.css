@@ -1,0 +1,213 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #f9fbfd;
+  color: #1a1a1a;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  background: linear-gradient(to right, #004080, #0066cc);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-title {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.nav-links a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: opacity 0.2s;
+}
+
+.nav-links a:hover {
+  opacity: 0.8;
+}
+
+/* Profile Section */
+.profile-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.profile-left {
+  flex: 2;
+  min-width: 300px;
+}
+
+.profile-left h1 {
+  font-size: 36px;
+  color: #000;
+}
+
+.profile-left h2 {
+  font-size: 22px;
+  color: #003366;
+  margin: 10px 0;
+}
+
+.university {
+  color: #607d8b;
+  margin-bottom: 20px;
+}
+
+.bio {
+  margin-bottom: 16px;
+}
+
+.profile-right {
+  flex: 1;
+  min-width: 250px;
+  text-align: center;
+}
+
+.profile-photo {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border: 2px solid black;
+}
+
+.contact-box {
+  margin-top: 20px;
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  text-align: left;
+}
+
+.action-buttons {
+  margin-top: 20px;
+}
+
+.action-buttons button {
+  padding: 10px 20px;
+  margin-right: 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #004080;
+  color: white;
+  transition: background 0.3s ease;
+}
+
+.action-buttons .secondary {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.action-buttons button:hover {
+  opacity: 0.9;
+}
+
+/* Areas of Expertise */
+.expertise-section {
+  padding: 60px 30px;
+  background-color: #f0f4f9;
+  text-align: center;
+}
+
+.expertise-section h2 {
+  font-size: 32px;
+  color: #002244;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  color: #555;
+  margin-bottom: 40px;
+  font-size: 16px;
+}
+
+.expertise-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.expertise-cards .card {
+  background: white;
+  border-radius: 12px;
+  padding: 30px 20px;
+  width: 280px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.expertise-cards .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.card-icon {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #003366;
+}
+
+.card p {
+  color: #555;
+  font-size: 15px;
+}
+
+/* Footer */
+.footer {
+  margin-top: 60px;
+  background-color: #004080;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.footer-content p {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #ffcc00;
+}
+
+.footer .copyright {
+  margin-top: 20px;
+  font-size: 14px;
+  opacity: 0.8;
+}
